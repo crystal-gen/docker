@@ -1,0 +1,10 @@
+{{#if from}}
+FROM {{from}}
+
+{{/if}}
+{{#if maintainer}}
+MAINTAINER {{{maintainer}}}
+
+{{/if}}
+{{#commands}}
+{{{command}}}{{/commands}}

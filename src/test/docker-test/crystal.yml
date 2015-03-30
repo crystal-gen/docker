@@ -1,0 +1,12 @@
+name: docker-test
+version: 0.1.0
+description: docker test
+
+generators:
+  docker:
+    spec:
+      from: ubuntu
+      maintainer: Chris Tate <chris@studiotate.com>
+      commands:
+        - RUN apt-get update && apt-get install php5
+    version: latest
